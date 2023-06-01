@@ -5,11 +5,11 @@ let s = 0
 basic.showIcon(IconNames.Yes)
 basic.forever(function () {
     s = input.acceleration(Dimension.Strength)
-    s = s - 500
+    s = s - 1022
     serial.writeValue("s", s)
     led.plotBarGraph(
     s,
-    3081
+    200
     )
     basic.pause(100)
 })
